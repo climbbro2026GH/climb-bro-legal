@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นโยบายความเป็นส่วนตัว · Climb.Bro</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    /* ไทยซ้อนสระ/วรรณยุกต์ได้ 2 ชั้น บรรทัดแคบกว่านี้ตัดหัวตัวอักษร (ดู src/theme/typography.ts) */
+    line-height: 1.75;
+    background: #14171C;
+    color: #E6E8EB;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .updated { color: #8A9099; font-size: 0.9rem; margin-top: 0; }
+  .intro { margin-bottom: 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.6rem; color: #C2C7CE; }
+  hr { border: none; border-top: 1px solid #2A2F36; margin: 4rem 0; }
+  footer { color: #8A9099; font-size: 0.85rem; margin-top: 3rem; }
+  @media (prefers-color-scheme: light) {
+    body { background: #FFFFFF; color: #14171C; }
+    li { color: #3C4149; }
+    hr { border-top-color: #E1E4E8; }
+  }
+</style>
+</head>
+<body>
+  <section>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p class="updated">31 สิงหาคม 2026</p>
+    <p class="intro">Climb.Bro เป็นแอพหาเพื่อนไปปีนผาในร่ม เอกสารนี้อธิบายว่าเราเก็บข้อมูลอะไรบ้าง เอาไปทำอะไร ใครเห็นได้บ้าง และคุณลบมันได้ยังไง เขียนให้อ่านรู้เรื่องจริงๆ ไม่ใช่เพื่อให้ครบๆ</p>
+
+    <h2>ข้อมูลที่เราเก็บ</h2>
+    <ul>
+      <li>บัญชี — อีเมลที่ใช้สมัคร รหัสผ่านถูกเข้ารหัสโดยระบบยืนยันตัวตนของ Supabase เราไม่เห็นรหัสผ่านของคุณ</li>
+      <li>โปรไฟล์ — ชื่อที่แสดง ชื่อผู้ใช้ (@username) ข้อความแนะนำตัว รูปโปรไฟล์ สีเทปและเกรดที่ปีนได้</li>
+      <li>เนื้อหาที่คุณสร้าง — โพสต์ (ข้อความและรูป) คอมเมนต์ การกดถูกใจ การติดตาม และบันทึกการปีนของคุณ</li>
+      <li>การจัดการเนื้อหา — รายงานที่คุณส่ง และรายชื่อผู้ใช้ที่คุณบล็อก</li>
+      <li>ข้อมูลทางเทคนิค — token สำหรับส่งแจ้งเตือน (เฉพาะเมื่อคุณเปิดใช้) ภาษาที่เลือก และเวลาที่เปิดอ่านแจ้งเตือนครั้งล่าสุด</li>
+      <li>ข้อความที่คุณส่งผ่านช่อง &quot;ส่งความคิดเห็นถึงทีมพัฒนา&quot;</li>
+    </ul>
+
+    <h2>ข้อมูลที่เราไม่เก็บ</h2>
+    <ul>
+      <li>ตำแหน่งของคุณไม่เคยถูกส่งออกจากเครื่อง — แอพขอสิทธิ์ตำแหน่งเพื่อเรียงรายชื่อยิมตามระยะทางเท่านั้น การคำนวณระยะทางทั้งหมดเกิดขึ้นในเครื่องคุณ พิกัดของคุณไม่ถูกส่งไปที่เซิร์ฟเวอร์และไม่ถูกบันทึกไว้ที่ไหนเลย ถ้าไม่ให้สิทธิ์ก็ใช้แอพได้ครบทุกอย่าง แค่เรียงยิมตามชื่อแทน</li>
+      <li>ไม่มีระบบเก็บสถิติการใช้งาน ไม่มีโฆษณา ไม่มีตัวติดตามของบริษัทอื่นในแอพนี้</li>
+      <li>ไม่เข้าถึงรายชื่อผู้ติดต่อ ไมโครโฟน หรือข้อมูลสุขภาพ</li>
+    </ul>
+
+    <h2>ใครเห็นอะไรได้บ้าง</h2>
+    <ul>
+      <li>ผู้ใช้ที่ล็อกอินแล้วทุกคนเห็น: โพสต์ คอมเมนต์ ชื่อที่แสดง @username ข้อความแนะนำตัว รูปโปรไฟล์ และเกรดของคุณ</li>
+      <li>อีเมลของคุณเห็นได้เฉพาะคุณเอง (ในหน้าตั้งค่า) ไม่แสดงให้ผู้ใช้คนอื่นเห็นที่ไหนเลย</li>
+      <li>การบล็อกเป็นแบบทางเดียวและเงียบ — คนที่ถูกบล็อกจะไม่ได้รับแจ้งและไม่รู้ว่าถูกบล็อก</li>
+      <li>รายงานที่คุณส่งเห็นได้เฉพาะทีมงาน เราไม่บอกผู้ถูกรายงานว่าใครเป็นคนรายงาน</li>
+    </ul>
+
+    <h2>ข้อมูลถูกเก็บที่ไหน</h2>
+    <ul>
+      <li>ข้อมูลและรูปภาพเก็บบน Supabase (ฐานข้อมูล PostgreSQL และระบบเก็บไฟล์) เซิร์ฟเวอร์ตั้งอยู่ที่โตเกียว ประเทศญี่ปุ่น</li>
+      <li>การแจ้งเตือนเข้ามือถือส่งผ่านบริการของ Expo ซึ่งส่งต่อไปยัง Apple หรือ Google เพื่อให้ถึงเครื่องคุณ ข้อความที่ส่งมีแค่ชื่อผู้ใช้ที่มาโต้ตอบกับคุณและประเภทของการโต้ตอบ</li>
+      <li>เราไม่ขาย ไม่แลกเปลี่ยน และไม่ส่งต่อข้อมูลของคุณให้บุคคลที่สามเพื่อการตลาด</li>
+    </ul>
+
+    <h2>ข้อมูลอยู่นานแค่ไหน</h2>
+    <ul>
+      <li>โพสต์มีอายุตามที่คุณเลือกตอนโพสต์ (6 ชั่วโมงถึง 7 วัน) หมดอายุแล้วจะถูกลบออกจากฐานข้อมูลจริง และรูปที่แนบมาถูกลบออกจากระบบเก็บไฟล์ด้วย</li>
+      <li>ถ้าคุณพักการใช้งานบัญชี โปรไฟล์และโพสต์จะถูกซ่อนจากทุกคนทันที กลับมาล็อกอินเมื่อไหร่ก็ใช้ต่อได้ แต่ถ้าไม่กลับมาภายใน 30 วัน บัญชีและข้อมูลทั้งหมดจะถูกลบถาวรโดยอัตโนมัติ</li>
+      <li>ถ้าคุณลบบัญชี ข้อมูลทั้งหมดจะถูกลบทันที — โพสต์ รูปภาพ คอมเมนต์ การถูกใจ การติดตาม บันทึกการปีน และตัวบัญชีเอง กู้คืนไม่ได้</li>
+    </ul>
+
+    <h2>สิทธิ์ของคุณ</h2>
+    <ul>
+      <li>ดูและแก้ไขข้อมูลโปรไฟล์ได้เองในแอพตลอดเวลา</li>
+      <li>พักการใช้งานหรือลบบัญชีได้เองในแอพ ที่หน้าตั้งค่า → จัดการบัญชี ไม่ต้องส่งอีเมลมาขอ</li>
+      <li>ปิดการแจ้งเตือนเข้ามือถือได้ที่หน้าตั้งค่า</li>
+      <li>ถ้าต้องการสำเนาข้อมูลของคุณ หรือมีคำถามเรื่องข้อมูลส่วนบุคคล ติดต่อ climb.bro2026@gmail.com</li>
+    </ul>
+
+    <h2>อายุผู้ใช้</h2>
+    <ul>
+      <li>แอพนี้ไม่ได้มีไว้สำหรับเด็กอายุต่ำกว่า 13 ปี และเราไม่ตั้งใจเก็บข้อมูลของเด็กอายุต่ำกว่า 13 ปี ถ้าพบว่ามีบัญชีดังกล่าว เราจะลบทิ้ง</li>
+    </ul>
+
+    <h2>การเปลี่ยนแปลงนโยบาย</h2>
+    <ul>
+      <li>ถ้ามีการแก้ไขที่กระทบกับข้อมูลของคุณอย่างมีนัยสำคัญ เราจะแจ้งในแอพก่อนมีผล วันที่แก้ไขล่าสุดแสดงอยู่ด้านบนของเอกสารนี้</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section>
+    <h1>Privacy Policy</h1>
+    <p class="updated">31 August 2026</p>
+    <p class="intro">Climb.Bro helps people find climbing partners at indoor gyms. This explains what we collect, what we do with it, who can see it, and how you delete it. It is written to be read, not to tick a box.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li>Account — the email you sign up with. Your password is hashed by Supabase Auth; we never see it.</li>
+      <li>Profile — display name, username, bio, profile photo, tape colour and grade.</li>
+      <li>What you create — posts (text and photos), comments, likes, follows, and your climb log.</li>
+      <li>Moderation — reports you submit and the users you block.</li>
+      <li>Technical — a push notification token (only if you enable notifications), your language choice, and when you last opened the notifications tab.</li>
+      <li>Anything you send through &quot;Send feedback to the dev team&quot;.</li>
+    </ul>
+
+    <h2>What we don't collect</h2>
+    <ul>
+      <li>Your location never leaves your device. The app asks for location purely to sort the gym list by distance, and that calculation happens entirely on your phone. Your coordinates are never sent to our servers and never stored. Decline the permission and everything still works; the list is just sorted by name.</li>
+      <li>No usage analytics, no advertising, no third-party trackers.</li>
+      <li>No access to your contacts, microphone, or health data.</li>
+    </ul>
+
+    <h2>Who can see what</h2>
+    <ul>
+      <li>Any signed-in user can see your posts, comments, display name, username, bio, profile photo and grade.</li>
+      <li>Your email is visible only to you, in your own Settings. It is never shown to other users.</li>
+      <li>Blocking is one-way and silent — the blocked person is not notified and cannot tell.</li>
+      <li>Reports are visible only to the app team. We never tell the reported person who reported them.</li>
+    </ul>
+
+    <h2>Where your data lives</h2>
+    <ul>
+      <li>Data and images are stored on Supabase (PostgreSQL and object storage) on servers in Tokyo, Japan.</li>
+      <li>Push notifications are delivered through Expo's push service, which passes them to Apple or Google. The message contains only the name of the person who interacted with you and what they did.</li>
+      <li>We do not sell, trade, or pass your data to third parties for marketing.</li>
+    </ul>
+
+    <h2>How long we keep it</h2>
+    <ul>
+      <li>Posts expire after the window you choose (6 hours to 7 days). Expired posts are deleted from the database and any attached photo is removed from storage.</li>
+      <li>If you pause your account, your profile and posts are hidden immediately. Log back in any time to resume; if you don't return within 30 days the account and all its data are permanently deleted.</li>
+      <li>If you delete your account, everything goes immediately — posts, photos, comments, likes, follows, climb logs and the account itself. It cannot be recovered.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li>View and edit your profile in the app at any time.</li>
+      <li>Pause or delete your account yourself, in Settings → Manage account. You don't have to email anyone to do it.</li>
+      <li>Turn push notifications off in Settings.</li>
+      <li>For a copy of your data or any privacy question, contact climb.bro2026@gmail.com.</li>
+    </ul>
+
+    <h2>Age</h2>
+    <ul>
+      <li>This app is not intended for children under 13, and we do not knowingly collect their data. If we find such an account we will delete it.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <ul>
+      <li>If we make a change that meaningfully affects your data, we will say so in the app before it takes effect. The last updated date is at the top of this document.</li>
+    </ul>
+  </section>
+
+  <footer>Climb.Bro · Privacy Policy</footer>
+</body>
+</html>
