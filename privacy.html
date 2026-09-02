@@ -42,6 +42,7 @@
       <li>บัญชี — อีเมลที่ใช้สมัคร รหัสผ่านถูกเข้ารหัสโดยระบบยืนยันตัวตนของ Supabase เราไม่เห็นรหัสผ่านของคุณ</li>
       <li>โปรไฟล์ — ชื่อที่แสดง ชื่อผู้ใช้ (@username) ข้อความแนะนำตัว รูปโปรไฟล์ สีเทปและเกรดที่ปีนได้</li>
       <li>เนื้อหาที่คุณสร้าง — โพสต์ (ข้อความและรูป) คอมเมนต์ การกดถูกใจ การติดตาม และบันทึกการปีนของคุณ</li>
+      <li>ข้อความส่วนตัว — ข้อความที่คุณส่งหากันในแชท ถูกเก็บไว้ในฐานข้อมูลเพื่อให้ทั้งสองฝ่ายเปิดอ่านย้อนหลังได้</li>
       <li>การจัดการเนื้อหา — รายงานที่คุณส่ง และรายชื่อผู้ใช้ที่คุณบล็อก</li>
       <li>ข้อมูลทางเทคนิค — token สำหรับส่งแจ้งเตือน (เฉพาะเมื่อคุณเปิดใช้) ภาษาที่เลือก และเวลาที่เปิดอ่านแจ้งเตือนครั้งล่าสุด</li>
       <li>ข้อความที่คุณส่งผ่านช่อง &quot;ส่งความคิดเห็นถึงทีมพัฒนา&quot;</li>
@@ -57,6 +58,8 @@
     <h2>ใครเห็นอะไรได้บ้าง</h2>
     <ul>
       <li>ผู้ใช้ที่ล็อกอินแล้วทุกคนเห็น: โพสต์ คอมเมนต์ ชื่อที่แสดง @username ข้อความแนะนำตัว รูปโปรไฟล์ และเกรดของคุณ</li>
+      <li>ข้อความส่วนตัวเห็นได้เฉพาะคุณกับคู่สนทนาเท่านั้น ฐานข้อมูลบังคับข้อนี้ไว้เอง ผู้ใช้คนอื่นเปิดอ่านไม่ได้แม้จะรู้รหัสห้องแชท และเราไม่ใช้ข้อความของคุณทำอย่างอื่นเลย</li>
+      <li>แต่ต้องบอกตรงๆ ว่าแชทนี้ไม่ได้เข้ารหัสแบบ end-to-end — ในทางเทคนิคผู้ดูแลระบบมีสิทธิ์เข้าถึงฐานข้อมูลได้ เราจะเปิดอ่านก็ต่อเมื่อมีการรายงานว่ามีการคุกคามและจำเป็นต้องตรวจสอบเท่านั้น ถ้าเรื่องไหนเป็นความลับจริงๆ อย่าส่งผ่านแชทนี้</li>
       <li>อีเมลของคุณเห็นได้เฉพาะคุณเอง (ในหน้าตั้งค่า) ไม่แสดงให้ผู้ใช้คนอื่นเห็นที่ไหนเลย</li>
       <li>การบล็อกเป็นแบบทางเดียวและเงียบ — คนที่ถูกบล็อกจะไม่ได้รับแจ้งและไม่รู้ว่าถูกบล็อก</li>
       <li>รายงานที่คุณส่งเห็นได้เฉพาะทีมงาน เราไม่บอกผู้ถูกรายงานว่าใครเป็นคนรายงาน</li>
@@ -73,7 +76,8 @@
     <ul>
       <li>โพสต์มีอายุตามที่คุณเลือกตอนโพสต์ (6 ชั่วโมงถึง 7 วัน) หมดอายุแล้วจะถูกลบออกจากฐานข้อมูลจริง และรูปที่แนบมาถูกลบออกจากระบบเก็บไฟล์ด้วย</li>
       <li>ถ้าคุณพักการใช้งานบัญชี โปรไฟล์และโพสต์จะถูกซ่อนจากทุกคนทันที กลับมาล็อกอินเมื่อไหร่ก็ใช้ต่อได้ แต่ถ้าไม่กลับมาภายใน 30 วัน บัญชีและข้อมูลทั้งหมดจะถูกลบถาวรโดยอัตโนมัติ</li>
-      <li>ถ้าคุณลบบัญชี ข้อมูลทั้งหมดจะถูกลบทันที — โพสต์ รูปภาพ คอมเมนต์ การถูกใจ การติดตาม บันทึกการปีน และตัวบัญชีเอง กู้คืนไม่ได้</li>
+      <li>ข้อความส่วนตัวไม่มีวันหมดอายุเองเหมือนโพสต์ — เก็บไว้จนกว่าจะมีใครลบ · ลบข้อความของตัวเองได้โดยกดค้างที่ข้อความนั้น และการลบจะทำให้หายไปจากฝั่งคู่สนทนาด้วย</li>
+      <li>ถ้าคุณลบบัญชี ข้อมูลทั้งหมดจะถูกลบทันที — โพสต์ รูปภาพ คอมเมนต์ การถูกใจ การติดตาม บันทึกการปีน ข้อความส่วนตัวทั้งหมด และตัวบัญชีเอง กู้คืนไม่ได้</li>
     </ul>
 
     <h2>สิทธิ์ของคุณ</h2>
@@ -107,6 +111,7 @@
       <li>Account — the email you sign up with. Your password is hashed by Supabase Auth; we never see it.</li>
       <li>Profile — display name, username, bio, profile photo, tape colour and grade.</li>
       <li>What you create — posts (text and photos), comments, likes, follows, and your climb log.</li>
+      <li>Private messages — what you send each other in chat, stored so both of you can read it back.</li>
       <li>Moderation — reports you submit and the users you block.</li>
       <li>Technical — a push notification token (only if you enable notifications), your language choice, and when you last opened the notifications tab.</li>
       <li>Anything you send through &quot;Send feedback to the dev team&quot;.</li>
@@ -122,6 +127,8 @@
     <h2>Who can see what</h2>
     <ul>
       <li>Any signed-in user can see your posts, comments, display name, username, bio, profile photo and grade.</li>
+      <li>Private messages are visible only to you and the person you are talking to. The database enforces this itself — another user cannot read them even knowing the conversation's id — and we do not use your messages for anything else.</li>
+      <li>To be straight with you: this chat is not end-to-end encrypted. An administrator technically has database access. We would only open a conversation if it were reported for harassment and had to be checked. If something is genuinely confidential, don't send it here.</li>
       <li>Your email is visible only to you, in your own Settings. It is never shown to other users.</li>
       <li>Blocking is one-way and silent — the blocked person is not notified and cannot tell.</li>
       <li>Reports are visible only to the app team. We never tell the reported person who reported them.</li>
@@ -138,7 +145,8 @@
     <ul>
       <li>Posts expire after the window you choose (6 hours to 7 days). Expired posts are deleted from the database and any attached photo is removed from storage.</li>
       <li>If you pause your account, your profile and posts are hidden immediately. Log back in any time to resume; if you don't return within 30 days the account and all its data are permanently deleted.</li>
-      <li>If you delete your account, everything goes immediately — posts, photos, comments, likes, follows, climb logs and the account itself. It cannot be recovered.</li>
+      <li>Private messages don't expire on their own the way posts do — they stay until someone deletes them. You can delete your own message by long-pressing it, and it disappears for the other person too.</li>
+      <li>If you delete your account, everything goes immediately — posts, photos, comments, likes, follows, climb logs, every private message and the account itself. It cannot be recovered.</li>
     </ul>
 
     <h2>Your rights</h2>
