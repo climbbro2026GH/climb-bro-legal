@@ -34,14 +34,17 @@
 <body>
   <section>
     <h1>นโยบายความเป็นส่วนตัว</h1>
-    <p class="updated">3 กันยายน 2026</p>
+    <p class="updated">14 กันยายน 2026</p>
     <p class="intro">Climb.Bro เป็นแอพหาเพื่อนไปปีนผาในร่ม เอกสารนี้อธิบายว่าเราเก็บข้อมูลอะไรบ้าง เอาไปทำอะไร ใครเห็นได้บ้าง และคุณลบมันได้ยังไง เขียนให้อ่านรู้เรื่องจริงๆ ไม่ใช่เพื่อให้ครบๆ</p>
 
     <h2>ข้อมูลที่เราเก็บ</h2>
     <ul>
       <li>บัญชี — อีเมลที่ใช้สมัคร รหัสผ่านถูกเข้ารหัสโดยระบบยืนยันตัวตนของ Supabase เราไม่เห็นรหัสผ่านของคุณ</li>
-      <li>โปรไฟล์ — ชื่อที่แสดง ชื่อผู้ใช้ (@username) ข้อความแนะนำตัว รูปโปรไฟล์ สีเทปและเกรดที่ปีนได้</li>
-      <li>เนื้อหาที่คุณสร้าง — โพสต์ (ข้อความและรูป) คอมเมนต์ การกดถูกใจ การติดตาม และบันทึกการปีนของคุณ</li>
+      <li>โปรไฟล์ — ชื่อที่แสดง ชื่อผู้ใช้ (@username) ข้อความแนะนำตัว รูปโปรไฟล์ และสีกรอบรูปที่คุณเลือก</li>
+      <li>เนื้อหาที่คุณสร้าง — โพสต์ (ข้อความและรูป) คอมเมนต์ การกดถูกใจ และการติดตาม</li>
+      <li>บันทึกการปีน — วันเวลาที่ปีน เกรดที่ปีนผ่าน (สีเกรดของยิม หรือระดับ) และยิมที่ปีน ถ้าคุณเลือก</li>
+      <li>เป้าหมายการปีน — สีเกรดที่ตั้งเป็นเป้า เส้นตาย และวันที่ทำได้</li>
+      <li>ยิมประจำ — ยิมที่คุณกดดาวไว้ ใช้เรียงให้ขึ้นก่อน และแจ้งเตือนเมื่อมีคนโพสต์ชวนไปยิมนั้น</li>
       <li>ข้อความส่วนตัว — ข้อความที่คุณส่งหากันในแชท ถูกเก็บไว้ในฐานข้อมูลเพื่อให้ทั้งสองฝ่ายเปิดอ่านย้อนหลังได้</li>
       <li>การจัดการเนื้อหา — รายงานที่คุณส่ง รายชื่อผู้ใช้ที่คุณบล็อก และบันทึกกรณีที่เนื้อหาของคุณถูกลบเพราะผิดข้อตกลง (เก็บเหตุผลและข้อความบางส่วนของสิ่งที่ถูกลบ เพื่อแจ้งให้คุณทราบว่าเกิดอะไรขึ้น — ไม่เก็บว่าใครเป็นผู้รายงาน)</li>
       <li>ข้อมูลทางเทคนิค — token สำหรับส่งแจ้งเตือน (เฉพาะเมื่อคุณเปิดใช้) ภาษาที่เลือก และเวลาที่เปิดอ่านแจ้งเตือนครั้งล่าสุด</li>
@@ -57,7 +60,9 @@
 
     <h2>ใครเห็นอะไรได้บ้าง</h2>
     <ul>
-      <li>ผู้ใช้ที่ล็อกอินแล้วทุกคนเห็น: โพสต์ คอมเมนต์ ชื่อที่แสดง @username ข้อความแนะนำตัว รูปโปรไฟล์ และเกรดของคุณ</li>
+      <li>ผู้ใช้ที่ล็อกอินแล้วทุกคนเห็น: โพสต์ คอมเมนต์ ชื่อที่แสดง @username ข้อความแนะนำตัว รูปโปรไฟล์ สีกรอบรูป และระดับที่ปีนได้สูงสุด (TOP GRADE)</li>
+      <li>ประวัติการปีนบนหน้าโปรไฟล์ของคุณก็เห็นได้ทุกคน — จำนวนครั้งที่ปีน ระดับที่ปีนได้ในแต่ละเดือน (เริ่มต้น / ท้าทาย / ขั้นสูง / โปรเจกต์) ก้าวใหม่ล่าสุด และจำนวนสัปดาห์ที่ปีนติดกัน · บันทึกเก่าที่พิมพ์เกรดเอง (เช่น V5) คนอื่นจะเห็นข้อความที่พิมพ์ด้วย</li>
+      <li>เห็นได้เฉพาะคุณ: ยิมที่ไปปีนในแต่ละครั้ง สีเกรดของยิม (เพราะบอกได้ว่าไปยิมไหน) เป้าหมายการปีน ยิมประจำ และการ์ด &quot;ยิมที่ไปบ่อย&quot; — ฐานข้อมูลบังคับข้อนี้ไว้เอง</li>
       <li>ข้อความส่วนตัวเห็นได้เฉพาะคุณกับคู่สนทนาเท่านั้น ฐานข้อมูลบังคับข้อนี้ไว้เอง ผู้ใช้คนอื่นเปิดอ่านไม่ได้แม้จะรู้รหัสห้องแชท และเราไม่ใช้ข้อความของคุณทำอย่างอื่นเลย</li>
       <li>แต่ต้องบอกตรงๆ ว่าแชทนี้ไม่ได้เข้ารหัสแบบ end-to-end — ในทางเทคนิคผู้ดูแลระบบมีสิทธิ์เข้าถึงฐานข้อมูลได้ เราจะเปิดอ่านก็ต่อเมื่อมีการรายงานว่ามีการคุกคามและจำเป็นต้องตรวจสอบเท่านั้น ถ้าเรื่องไหนเป็นความลับจริงๆ อย่าส่งผ่านแชทนี้</li>
       <li>อีเมลของคุณเห็นได้เฉพาะคุณเอง (ในหน้าตั้งค่า) ไม่แสดงให้ผู้ใช้คนอื่นเห็นที่ไหนเลย</li>
@@ -77,12 +82,13 @@
       <li>โพสต์มีอายุตามที่คุณเลือกตอนโพสต์ (6 ชั่วโมงถึง 7 วัน) หมดอายุแล้วจะถูกลบออกจากฐานข้อมูลจริง และรูปที่แนบมาถูกลบออกจากระบบเก็บไฟล์ด้วย</li>
       <li>ถ้าคุณพักการใช้งานบัญชี โปรไฟล์และโพสต์จะถูกซ่อนจากทุกคนทันที กลับมาล็อกอินเมื่อไหร่ก็ใช้ต่อได้ แต่ถ้าไม่กลับมาภายใน 30 วัน บัญชีและข้อมูลทั้งหมดจะถูกลบถาวรโดยอัตโนมัติ</li>
       <li>ข้อความส่วนตัวไม่มีวันหมดอายุเองเหมือนโพสต์ — เก็บไว้จนกว่าจะมีใครลบ · ลบข้อความของตัวเองได้โดยกดค้างที่ข้อความนั้น และการลบจะทำให้หายไปจากฝั่งคู่สนทนาด้วย</li>
-      <li>ถ้าคุณลบบัญชี ข้อมูลทั้งหมดจะถูกลบทันที — โพสต์ รูปภาพ คอมเมนต์ การถูกใจ การติดตาม บันทึกการปีน ข้อความส่วนตัวทั้งหมด และตัวบัญชีเอง กู้คืนไม่ได้</li>
+      <li>ถ้าคุณลบบัญชี ข้อมูลทั้งหมดจะถูกลบทันที — โพสต์ รูปภาพ คอมเมนต์ การถูกใจ การติดตาม บันทึกการปีน เป้าหมาย ยิมประจำ ข้อความส่วนตัวทั้งหมด และตัวบัญชีเอง กู้คืนไม่ได้</li>
     </ul>
 
     <h2>สิทธิ์ของคุณ</h2>
     <ul>
       <li>ดูและแก้ไขข้อมูลโปรไฟล์ได้เองในแอพตลอดเวลา</li>
+      <li>ลบบันทึกการปีน 5 ครั้งล่าสุดที่บันทึกผิดได้เองที่หน้าโปรไฟล์ ถ้าต้องการลบบันทึกเก่ากว่านั้น ติดต่ออีเมลด้านล่าง · ลบเป้าหมายและเอาดาวยิมประจำออกได้ตลอด</li>
       <li>พักการใช้งานหรือลบบัญชีได้เองในแอพ ที่หน้าตั้งค่า → จัดการบัญชี ไม่ต้องส่งอีเมลมาขอ</li>
       <li>ปิดการแจ้งเตือนเข้ามือถือได้ที่หน้าตั้งค่า</li>
       <li>ถ้าต้องการสำเนาข้อมูลของคุณ หรือมีคำถามเรื่องข้อมูลส่วนบุคคล ติดต่อ climb.bro2026@gmail.com</li>
@@ -103,14 +109,17 @@
 
   <section>
     <h1>Privacy Policy</h1>
-    <p class="updated">3 September 2026</p>
+    <p class="updated">14 September 2026</p>
     <p class="intro">Climb.Bro helps people find climbing partners at indoor gyms. This explains what we collect, what we do with it, who can see it, and how you delete it. It is written to be read, not to tick a box.</p>
 
     <h2>What we collect</h2>
     <ul>
       <li>Account — the email you sign up with. Your password is hashed by Supabase Auth; we never see it.</li>
-      <li>Profile — display name, username, bio, profile photo, tape colour and grade.</li>
-      <li>What you create — posts (text and photos), comments, likes, follows, and your climb log.</li>
+      <li>Profile — display name, username, bio, profile photo and the ring colour you pick.</li>
+      <li>What you create — posts (text and photos), comments, likes and follows.</li>
+      <li>Climb log — when you climbed, the grade (the gym's colour grade or a level), and the gym if you chose one.</li>
+      <li>Climbing goal — the target colour, the deadline, and when you reached it.</li>
+      <li>Regular gyms — gyms you star; used to list them first and to notify you when someone posts about them.</li>
       <li>Private messages — what you send each other in chat, stored so both of you can read it back.</li>
       <li>Moderation — reports you submit, the users you block, and a record of any content of yours removed for breaking the terms (the reason and a short excerpt, so we can tell you what happened — never who reported it).</li>
       <li>Technical — a push notification token (only if you enable notifications), your language choice, and when you last opened the notifications tab.</li>
@@ -126,7 +135,9 @@
 
     <h2>Who can see what</h2>
     <ul>
-      <li>Any signed-in user can see your posts, comments, display name, username, bio, profile photo and grade.</li>
+      <li>Any signed-in user can see your posts, comments, display name, username, bio, profile photo, ring colour and top grade.</li>
+      <li>Your climbing history on your profile is visible to everyone too: how many times you've climbed, the level you reached each month (Starter / Challenging / Advanced / Project), your latest new best and your week streak. For older climbs where you typed a grade (e.g. V5), others see that text.</li>
+      <li>Only you can see: the gym of each climb, the gym's colour grade (it reveals which gym), your goal, your regular gyms and the &quot;Gyms you climb at&quot; card. The database enforces this.</li>
       <li>Private messages are visible only to you and the person you are talking to. The database enforces this itself — another user cannot read them even knowing the conversation's id — and we do not use your messages for anything else.</li>
       <li>To be straight with you: this chat is not end-to-end encrypted. An administrator technically has database access. We would only open a conversation if it were reported for harassment and had to be checked. If something is genuinely confidential, don't send it here.</li>
       <li>Your email is visible only to you, in your own Settings. It is never shown to other users.</li>
@@ -146,12 +157,13 @@
       <li>Posts expire after the window you choose (6 hours to 7 days). Expired posts are deleted from the database and any attached photo is removed from storage.</li>
       <li>If you pause your account, your profile and posts are hidden immediately. Log back in any time to resume; if you don't return within 30 days the account and all its data are permanently deleted.</li>
       <li>Private messages don't expire on their own the way posts do — they stay until someone deletes them. You can delete your own message by long-pressing it, and it disappears for the other person too.</li>
-      <li>If you delete your account, everything goes immediately — posts, photos, comments, likes, follows, climb logs, every private message and the account itself. It cannot be recovered.</li>
+      <li>If you delete your account, everything goes immediately — posts, photos, comments, likes, follows, climb logs, goals, regular gyms, every private message and the account itself. It cannot be recovered.</li>
     </ul>
 
     <h2>Your rights</h2>
     <ul>
       <li>View and edit your profile in the app at any time.</li>
+      <li>Delete any of your 5 most recent climbs yourself on your profile; for older ones, email us. You can remove your goal or unstar a gym any time.</li>
       <li>Pause or delete your account yourself, in Settings → Manage account. You don't have to email anyone to do it.</li>
       <li>Turn push notifications off in Settings.</li>
       <li>For a copy of your data or any privacy question, contact climb.bro2026@gmail.com.</li>
