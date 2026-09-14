@@ -62,6 +62,7 @@
     <ul>
       <li>ผู้ใช้ที่ล็อกอินแล้วทุกคนเห็น: โพสต์ คอมเมนต์ ชื่อที่แสดง @username ข้อความแนะนำตัว รูปโปรไฟล์ สีกรอบรูป และระดับที่ปีนได้สูงสุด (TOP GRADE)</li>
       <li>ประวัติการปีนบนหน้าโปรไฟล์ของคุณก็เห็นได้ทุกคน — จำนวนครั้งที่ปีน ระดับที่ปีนได้ในแต่ละเดือน (เริ่มต้น / ท้าทาย / ขั้นสูง / โปรเจกต์) ก้าวใหม่ล่าสุด และจำนวนสัปดาห์ที่ปีนติดกัน · บันทึกเก่าที่พิมพ์เกรดเอง (เช่น V5) คนอื่นจะเห็นข้อความที่พิมพ์ด้วย</li>
+      <li>ซ่อนประวัติการปีนจากคนอื่นได้ที่ ตั้งค่า → ความเป็นส่วนตัว (TOP GRADE และสีกรอบรูปยังเห็น)</li>
       <li>เห็นได้เฉพาะคุณ: ยิมที่ไปปีนในแต่ละครั้ง สีเกรดของยิม (เพราะบอกได้ว่าไปยิมไหน) เป้าหมายการปีน ยิมประจำ และการ์ด &quot;ยิมที่ไปบ่อย&quot; — ฐานข้อมูลบังคับข้อนี้ไว้เอง</li>
       <li>ข้อความส่วนตัวเห็นได้เฉพาะคุณกับคู่สนทนาเท่านั้น ฐานข้อมูลบังคับข้อนี้ไว้เอง ผู้ใช้คนอื่นเปิดอ่านไม่ได้แม้จะรู้รหัสห้องแชท และเราไม่ใช้ข้อความของคุณทำอย่างอื่นเลย</li>
       <li>แต่ต้องบอกตรงๆ ว่าแชทนี้ไม่ได้เข้ารหัสแบบ end-to-end — ในทางเทคนิคผู้ดูแลระบบมีสิทธิ์เข้าถึงฐานข้อมูลได้ เราจะเปิดอ่านก็ต่อเมื่อมีการรายงานว่ามีการคุกคามและจำเป็นต้องตรวจสอบเท่านั้น ถ้าเรื่องไหนเป็นความลับจริงๆ อย่าส่งผ่านแชทนี้</li>
@@ -137,6 +138,7 @@
     <ul>
       <li>Any signed-in user can see your posts, comments, display name, username, bio, profile photo, ring colour and top grade.</li>
       <li>Your climbing history on your profile is visible to everyone too: how many times you've climbed, the level you reached each month (Starter / Challenging / Advanced / Project), your latest new best and your week streak. For older climbs where you typed a grade (e.g. V5), others see that text.</li>
+      <li>You can hide your climbing history from others in Settings → Privacy (your top grade and ring colour stay visible).</li>
       <li>Only you can see: the gym of each climb, the gym's colour grade (it reveals which gym), your goal, your regular gyms and the &quot;Gyms you climb at&quot; card. The database enforces this.</li>
       <li>Private messages are visible only to you and the person you are talking to. The database enforces this itself — another user cannot read them even knowing the conversation's id — and we do not use your messages for anything else.</li>
       <li>To be straight with you: this chat is not end-to-end encrypted. An administrator technically has database access. We would only open a conversation if it were reported for harassment and had to be checked. If something is genuinely confidential, don't send it here.</li>
